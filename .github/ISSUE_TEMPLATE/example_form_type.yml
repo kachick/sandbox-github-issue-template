@@ -12,9 +12,8 @@ body:
       label: 現状の問題点・動機・背景
       description: 雑でも伝われば構わない
       value: |
-        1. まず URL1 みたいなことがあった
-        2. それは URL2 みたいな理由から、好ましくない
-      render: markdown
+        1. さっき URL1 が発生した
+        2. それは URL2 とかの理由から、好ましくない
     validations:
       required: true
   - type: textarea
@@ -29,19 +28,17 @@ body:
     id: links
     attributes:
       label: Links/References
-      description: 関連する issue/PR/slack/参考資料 等へのURLを記載して下さい
+      description: 関連する issue/PR/slack/参考資料 等があれば貼っておく
       value: |
         - https://github.com/kachick/times_kachick/issues/147
         - [参考資料](参考資料のURL)
-      render: markdown
     validations:
       required: false
   - type: textarea
     id: mention
     attributes:
       label: Mentions
-      description: 深く関わる人達宛のメンションを含めましょう
+      description: この issue を適宜気にして欲しい人達へメンションする
       value: "@kachick @pankona"
-      render: markdown
     validations:
       required: false
