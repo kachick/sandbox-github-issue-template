@@ -36,7 +36,7 @@ body:
       render: markdown
     validations:
       required: false
-  - type: dropdown
+  - type: textarea
     id: mention
     attributes:
       label: Mentions
