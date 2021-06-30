@@ -1,0 +1,47 @@
+name: Example / Form type issue template
+description: https://github.com/kachick/times_kachick/issues/147
+title: "Form type issue template test / "
+labels: [とある日本語ラベル, needs triage]
+assignees:
+  - kachick
+  - pankona
+body:
+  - type: textarea
+    id: background
+    attributes:
+      label: 現状の問題点・動機・背景
+      description: 雑でも伝われば構わない
+      value: |
+        1. まず URL1 みたいなことがあった
+        2. それは URL2 みたいな理由から、好ましくない
+      render: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How(案)
+      description: なんか案とか方策があれば適当に書き殴る。無ければ空で良い
+      value: "風の吹くまま気の向くまま"
+    validations:
+      required: false
+  - type: textarea
+    id: links
+    attributes:
+      label: Links/References
+      description: 関連する issue/PR/slack/参考資料 等へのURLを記載して下さい
+      value: |
+        - https://github.com/kachick/times_kachick/issues/147
+        - [参考資料](参考資料のURL)
+      render: markdown
+    validations:
+      required: false
+  - type: dropdown
+    id: mention
+    attributes:
+      label: Mentions
+      description: 深く関わる人達宛のメンションを含めましょう
+      value: "@kachick @pankona"
+      render: markdown
+    validations:
+      required: false
